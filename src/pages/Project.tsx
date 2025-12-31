@@ -11,30 +11,30 @@ interface Project {
 let projects: Project[] = [
     {
         title: 'My Local Escape',
-        image: '/site-internet.png',
+        image: '/pic-st-loup.png',
         gitHub: 'https://github.com/RieuThomas/My-local-escape',
         webLink: 'https://rieuthomas.github.io/My-local-escape'
     },
     {
         title: 'Wizdle',
-        image: '/site-internet.png',
+        image: '/wizdle.jpg',
         gitHub: 'https://github.com/RieuThomas/Wizdle',
         webLink: 'https://wizdle.vercel.app'
     },
     {
         title: 'Portfolio',
-        image: '/site-internet.png',
-        gitHub: 'https://github.com/RieuThomas/Wizdle',
-        webLink: 'https://wizdle.vercel.app'
+        image: '/portfolio.png',
+        gitHub: 'https://github.com/RieuThomas/portfolio',
+       
     },
     {
         title: 'Expédition 33',
-        image: '/site-internet.png',
+        image: '/CO.jpg',
         gitHub: 'https://github.com/RieuThomas/expedition-33',     
     },
     {
         title: 'Packedex',
-        image: '/site-internet.png',
+        image: '/Packedex.png',
         gitHub: 'https://github.com/RieuThomas/Pokedex-cra',
     }
 ]
@@ -42,12 +42,15 @@ let projects: Project[] = [
 
 function Project () {
     return (
-        <section>
-            {projects.map((project) => (
-                <CardProject project={project} />
-            ))}
-        </section>
-        
+        <>
+            <h1>Projets</h1>
+            <section className="project">
+                {projects.map((project) => (
+                    <CardProject project={project} />
+                ))}
+            </section>   
+        </>
+          
     )
 }
 
