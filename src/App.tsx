@@ -1,6 +1,31 @@
 import './styles/reset.css'
 import './styles/App.css'
 import { Link, Outlet } from 'react-router'
+import CardIcon from './component/CardIcon'
+
+const contactArray = [
+    {
+        name: "GitHub",
+        image: "/github.png",
+        link: "https://github.com/RieuThomas"
+    },
+    {
+        name: "LinkedIn",
+        image: "/linkedin.png",
+        link: "https://www.linkedin.com/in/thomas-rieu/"
+    },
+    {
+        name: "Mail",
+        image: "mail.png",
+        link: "mailto:rieu.thomas@hotmail.com"
+    },
+    {
+        name: "CV",
+        image: "telecharger.png",
+        link: "/CV-Rieu-Thomas.jpg",
+        download: true
+    }
+]
 
 function App() {
 
@@ -13,17 +38,20 @@ function App() {
             <h2>Thomas RIEU</h2>
             <p>Développeur Full-Stack</p>
           </div>
-          <div className='sidebar-details'>
-            <a href="https://github.com/RieuThomas" target='_blank'>
-              <img src="/github.png" alt="github" />
-            </a>
-            <a href="https://www.linkedin.com/in/thomas-rieu/" target='_blank'>
-              <img src="/linkedin.png" alt="linkedin" />
-            </a>
-            <a href="mailto:rieu.thomas@hotmail.com"target='_blank'>
-              <img src="mail.png" alt="mail" />
-            </a>     
-          </div>
+          <div className='sidebar-details-container'>
+            <h2>Contact</h2>
+            <div className='sidebar-details'>
+              {contactArray.map((contact) => (
+                <a 
+                  href={contact.link} 
+                  target={contact.download ? undefined : "_blank"}
+                  download={contact.download}
+                >
+                  <CardIcon icon={contact}/>
+                </a>
+              ))}  
+            </div>
+          </div>          
         </aside>
         <section className='main-section'>
           <ul className='navbar'>
