@@ -1,0 +1,40 @@
+.card-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.card-skill h3 {
+    color: white;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: blueviolet;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity .4s ease, transform .4s ease;
+    pointer-events: none;
+}
+
+/* Desktop : visible au hover */
+@media (hover: hover) {
+  .card-skill:hover h3 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile : toujours visible */
+@media (hover: none) {
+  .card-skill h3 {
+    opacity: 1;
+    transform: none;
+  }
+}
+
