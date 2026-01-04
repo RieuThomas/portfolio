@@ -1,0 +1,144 @@
+.all-skill{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.skill-container h2 {
+    color: white;
+    font-size: 24px;
+    padding-left: 24px;
+}
+
+.hardskill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+.softskill ul {
+    margin-top: 30px;
+}
+.softskill ul li {
+    padding: 12px;
+    color: white;
+    font-size: 20px;
+}
+
+.hardskill img {
+    width: 40px;
+    height: 40px;
+}
+
+.skill {
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+}
+
+.CSS:hover, .TypeScript:hover, .MySQL:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(36, 103, 229),
+    inset 0px 0px 15px -3px rgb(36, 103, 229),
+    0px 0px 15px 0px rgb(36, 103, 229); 
+}
+
+.HTML:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(184, 83, 16),
+    inset 0px 0px 15px -3px rgb(184, 83, 16),
+    0px 0px 15px 0px rgb(184, 83, 16); 
+}
+
+.JavaScript:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(226, 237, 10),
+    inset 0px 0px 15px -3px rgb(226, 237, 10),
+    0px 0px 15px 0px rgb(226, 237, 10); 
+}
+
+.React:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(3, 255, 255),
+    inset 0px 0px 15px -3px rgb(3, 255, 255),
+    0px 0px 15px 0px rgb(3, 255, 255); 
+}
+
+.Express:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(255,255,255),
+    inset 0px 0px 15px -3px rgb(255, 255, 255),
+    0px 0px 15px 0px rgb(255, 255, 255); 
+}
+
+.NodeJS:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(238, 0, 255),
+    inset 0px 0px 15px -3px rgb(238, 0, 255),
+    0px 0px 15px 0px rgb(238, 0, 255); 
+}
+
+.Figma:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(255, 0, 0),
+    inset 0px 0px 15px -3px rgb(255, 0, 0),
+    0px 0px 15px 0px rgb(255, 0, 0); 
+}
+
+
+@media screen and (max-width: 1024px) {
+
+.all-skill {
+        display: block;
+}
+
+    .CSS, .TypeScript, .MySQL {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(36, 103, 229),
+    inset 0px 0px 15px -3px rgb(36, 103, 229),
+    0px 0px 15px 0px rgb(36, 103, 229); 
+}
+
+.HTML {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(184, 83, 16),
+    inset 0px 0px 15px -3px rgb(184, 83, 16),
+    0px 0px 15px 0px rgb(184, 83, 16); 
+}
+
+.JavaScript {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(226, 237, 10),
+    inset 0px 0px 15px -3px rgb(226, 237, 10),
+    0px 0px 15px 0px rgb(226, 237, 10); 
+}
+
+.React {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(3, 255, 255),
+    inset 0px 0px 15px -3px rgb(3, 255, 255),
+    0px 0px 15px 0px rgb(3, 255, 255); 
+}
+
+.Express {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(255,255,255),
+    inset 0px 0px 15px -3px rgb(255, 255, 255),
+    0px 0px 15px 0px rgb(255, 255, 255); 
+}
+
+.NodeJS {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(238, 0, 255),
+    inset 0px 0px 15px -3px rgb(238, 0, 255),
+    0px 0px 15px 0px rgb(238, 0, 255); 
+}
+
+.Figma {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgb(255, 0, 0),
+    inset 0px 0px 15px -3px rgb(255, 0, 0),
+    0px 0px 15px 0px rgb(255, 0, 0); 
+}
+
+}
