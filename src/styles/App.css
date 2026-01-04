@@ -2,11 +2,26 @@ body div#root {
   background-image:url("background.png");
   background-size:cover;
   background-position: center bottom;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family:'Inter',sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: 60px auto;
+  gap: 32px;
+}
+
+main img {
+  width: 200px;
 }
 
 header {
@@ -15,6 +30,8 @@ header {
   justify-content: space-between;
   font-size: 2rem;
   color: white;
+  height: 120px;
+  font-size: 48px;
 }
 
 a {
@@ -22,27 +39,174 @@ a {
   color: white;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 1rem;
+h1 {
+    color: white;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
 }
 
-footer img {
+h1::after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8%;
+  border-radius: 8px;
+  background-color: blueviolet;
+  margin-top: 20px;
+}
+
+aside {
+  min-width: 200px;
+  max-height: 90vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: solid 1px rgba(255,255,255,0.6);
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.2);
+  padding: 16px;
+}
+
+.sidebar-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: white;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+.sidebar-infos p {
+  color: white;
+}
+
+.sidebar-infos img {
+  border-radius: 24px;
+}
+
+.sidebar-infos::after {
+    content: "";
+    display: block;
+    background: blueviolet;
+    height: 2px;
+    width: 100%;
+}
+
+.sidebar-details-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-details {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.sidebar-details img {
   width: 40px;
   height: 40px;
-  padding: 8px;
 }
 
-footer a {
-  border: 1px solid transparent;
+.main-section {
+  border: solid 1px rgba(255,255,255,0.6);
   border-radius: 8px;
+  background-color: rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+  width: 70%;
 }
 
-footer a:hover {
+.navbar {
+  display: flex;
+  background-color: rgba(255,255,255,0.1);
+  position: absolute;
+  inset: 0 0 auto auto;
+  width: max-content;
+  border-radius: 0 0 0 20px;
+  list-style: none;
+}
+
+.navbar li {
+  padding: 8px 24px;
+  margin: 8px 0px;
+  border-right: 1px solid white
+}
+
+.navbar li:last-child {
+  border-right: none;
+}
+
+.navbar a{
+  transition: color .5s ease;
+}
+
+.navbar a:hover{
+  color: blueviolet;
+}
+
+.outlet-section {
+  padding: 30px;
+}
+
+.GitHub:hover, .Mail:hover, .LinkedIn:hover, .CV:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 10px 4px rgba(255,255,255,0.6);
+  box-shadow: 0px 0px 5px 0px rgb(255,255,255),
+  inset 0px 0px 15px -3px rgb(255, 255, 255),
+  0px 0px 15px 0px rgb(255, 255, 255); 
   transition: all 0.4s ease-in-out;
-  border: 1px solid white;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .navbar {
+    position: fixed;
+    inset: auto auto 0 0;
+    justify-content: space-evenly;
+    width: 100vw; 
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 20px 20px 0 0;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+  }
+
+  .navbar li {
+    width: 100%;
+    text-align: center;
+  }
+
+  main {
+  flex-direction: column;
+}
+
+.sidebar {
+  flex-direction: row;
+}
+
+.main-section {
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+.sidebar {
+  flex-direction: column;
+}
 }
