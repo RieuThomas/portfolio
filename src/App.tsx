@@ -6,22 +6,22 @@ import CardIcon from './component/CardIcon'
 const contactArray = [
     {
         name: "GitHub",
-        image: "/github.png",
+        image: "/github2.png",
         link: "https://github.com/RieuThomas"
     },
     {
         name: "LinkedIn",
-        image: "/linkedin.png",
+        image: "/linkedin2.png",
         link: "https://www.linkedin.com/in/thomas-rieu/"
     },
     {
         name: "Mail",
-        image: "mail.png",
+        image: "mail2.png",
         link: "mailto:rieu.thomas@hotmail.com"
     },
     {
         name: "CV",
-        image: "telecharger.png",
+        image: "download.png",
         link: "/CV-Rieu-Thomas.jpg",
         download: true
     }
