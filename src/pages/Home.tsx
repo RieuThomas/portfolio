@@ -5,7 +5,7 @@ function Home() {
         <>
         <h1>A propos</h1>
           <p className="about">
-            Développeur web full-stack en formation, avec une forte appétence pour le front-end, je conçois des interfaces modernes, performantes et bien structurées.<br /><br />
+            Développeur web full-stack en formation, je conçois des interfaces modernes, performantes et bien structurées.<br /><br />
 
             Issu d’une formation scientifique, j’aborde le développement avec rigueur, méthode et sens de l’analyse, en accordant une attention particulière à la qualité du code et à l’expérience utilisateur.<br /><br />
 
