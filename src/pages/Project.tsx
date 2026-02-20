@@ -45,7 +45,7 @@ const projects: Project[] = [
     },
     {
         title: 'TeamUp',
-        image: 'TeamUp.png',
+        image: '/TeamUp.png',
         gitHub: 'https://github.com/RieuThomas/Pokedex-cra',
         tag:'Ecole'
     }
